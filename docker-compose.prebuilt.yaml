@@ -121,7 +121,7 @@ services:
     volumes:
       - type: bind
         source: ${VIDEO_DATA_DIR:-/volume1/home/sal/research/downloads} # Set this environment variable for the actual video download path
-      - target:/data
+        target: /data
 
   nginx:
     image: ghcr.io/horahoradev/prometheustube/nginx:master
